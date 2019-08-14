@@ -781,8 +781,12 @@ class Event:
         location = from_union([from_str, from_none], obj.get("EventLocation"))
         agenda_file = from_union([from_str, from_none], obj.get("EventAgendaFile"))
         minutes_file = from_union([from_str, from_none], obj.get("EventMinutesFile"))
-        agenda_last_published_utc = from_union([from_datetime, from_none], obj.get("EventAgendaLastPublishedUTC"))
-        minutes_last_published_utc = from_union([from_datetime, from_none], obj.get("EventMinutesLastPublishedUTC"))
+        agenda_last_published_utc = from_union(
+            [from_datetime, from_none], obj.get("EventAgendaLastPublishedUTC")
+        )
+        minutes_last_published_utc = from_union(
+            [from_datetime, from_none], obj.get("EventMinutesLastPublishedUTC")
+        )
         comment = from_union([from_str, from_none], obj.get("EventComment"))
         video_path = from_union([from_str, from_none], obj.get("EventVideoPath"))
         in_site_url = from_union([from_str, from_none], obj.get("EventInSiteURL"))
