@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+black = "*"
+sphinx = "*"
+mypy = "*"
+"nose2" = {version = "*", extras = ["coverage_plugin"]}
+
+[packages]
+requests = "*"
+python-dateutil = "*"
+responses = "*"
+cachetools = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true

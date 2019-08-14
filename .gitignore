@@ -1,0 +1,3 @@
+.mypy_*
+.vscode
+.DS_Store
