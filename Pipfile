@@ -8,11 +8,12 @@ black = "*"
 sphinx = "*"
 mypy = "*"
 "nose2" = {version = "*", extras = ["coverage_plugin"]}
+twine = "*"
+responses = "*"
 
 [packages]
 requests = "*"
 python-dateutil = "*"
-responses = "*"
 cachetools = "*"
 
 [requires]

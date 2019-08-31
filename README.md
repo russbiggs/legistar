@@ -20,6 +20,39 @@ www.cabq.gov/council/ccdist6.html', address2=None, city2=None, state2=None, zi
 p2=None, phone2=None, fax2=None, email2=None, www2=None)
 ```
 
+## Legistar sites
+
+| City | client code | notes |
+| --- | --- | --- |
+| Albuquerque, NM | cabq | |
+| Alexandria, VA| alexandria | |
+| Chicago, IL | chicago | |
+| Chula Vista, CA | chulavista | |
+| Columbus, OH| columbus | |
+| Corpus Christi, TX|  corpuschristi| |
+| Denver,CO  |  denver | | 
+| Fresno, CA| fresno | |
+| Fullerton, CA| fullerton| |
+| Huntington Beach, CA | huntingtonbeach| |
+| Lexington, KY| lexington | |
+| Louisville, KY| louisville| |
+| Mesa, AZ | mesa | |
+| Milwaukee, WI| milwaukee | |
+| Naperville, IL| naperville | |
+| Newark,NJ | newark | |
+| New York City, NY | nyc | requires auth token |
+| Oakland, CA| oakland | |
+| Phoenix,AZ| phoenix | |
+| Pittsburgh, PA| pittsburgh | |
+| Sacramento, CA| sacramento | |
+| Salem, OR | salem | |
+| Salinas, CA| salinas | |
+| San Antonio,TX | sanantonio | |
+| San Bernardino, CA| sanbernardino | |
+| San Jose, CA| sanjose | |
+| Santa Clara, CA| santaclara| |
+| Seattle, WA| seattle | |
+| Stockton, CA| stockton | |
 
 
 ## Contributing

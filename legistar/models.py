@@ -62,6 +62,29 @@ def to_class(c: Type[T], x: Any) -> dict:
 
 @dataclass
 class Action:
+    """ Action description
+    
+    `Action <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusAction>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar name: description
+    :vartype name: str
+    :ivar active_flag: description
+    :vartype active_flag: int
+    :ivar used_flag: description
+    :vartype used_flag: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -110,6 +133,55 @@ def action_to_dict(x: Action) -> Any:
 
 @dataclass
 class Body:
+    """ Body description
+    
+    `Body <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusBody>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar name: description
+    :vartype name: str
+    :ivar type_id: description
+    :vartype type_id: int
+    :ivar type_name: description
+    :vartype type_name: str
+    :ivar meet_flag: description
+    :vartype meet_flag: int
+    :ivar active_flag: description
+    :vartype active_flag: int
+    :ivar sort: description
+    :vartype sort: int
+    :ivar description: description
+    :vartype description: str
+    :ivar contact_name_id: description
+    :vartype contact_name_id: int
+    :ivar contact_full_name: description
+    :vartype contact_full_name: str
+    :ivar contact_phone: description
+    :vartype contact_phone: str
+    :ivar contact_email: description
+    :vartype contact_email: str
+    :ivar used_control_flag: description
+    :vartype used_control_flag: int
+    :ivar number_of_members: description
+    :vartype number_of_members: int
+    :ivar used_acting_flag: description
+    :vartype used_acting_flag: int
+    :ivar used_target_flag: description
+    :vartype used_target_flag: int
+    :ivar used_sponsor_flag: description
+    :vartype used_sponsor_flag: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -248,6 +320,25 @@ def body_to_dict(x: Body) -> Any:
 
 @dataclass
 class BodyType:
+    """ BodyType description
+    
+    `BodyType <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusBodyType>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar name: description
+    :vartype name: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -290,6 +381,31 @@ def body_type_to_dict(x: BodyType) -> Any:
 
 @dataclass
 class CodeSection:
+    """ CodeSection description
+    
+    `CodeSection <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusCodeSection>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar number: description
+    :vartype number: str
+    :ivar name: description
+    :vartype name: str
+    :ivar active_flag: description
+    :vartype active_flag: int
+    :ivar used_flag: description
+    :vartype used_flag: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -358,6 +474,49 @@ def code_section_to_dict(x: CodeSection) -> Any:
 
 @dataclass
 class MatterAttachment:
+    """ MatterAttachment description
+    
+    `MatterAttachment <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterAttachment>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar name: description
+    :vartype name: str
+    :ivar hyperlink: description
+    :vartype hyperlink: str
+    :ivar file_name: description
+    :vartype file_name: str
+    :ivar matter_version: description
+    :vartype matter_version: str
+    :ivar is_hyperlink: description
+    :vartype is_hyperlink: bool
+    :ivar binary: description
+    :vartype binary: str
+    :ivar is_supporting_document: description
+    :vartype is_supporting_document: bool
+    :ivar show_on_internet_page: description
+    :vartype show_on_internet_page: bool
+    :ivar is_minute_order: description
+    :vartype is_minute_order: bool
+    :ivar is_board_letter: description
+    :vartype is_board_letter: bool
+    :ivar agiloft_id: description
+    :vartype agiloft_id: int
+    :ivar description: description
+    :vartype description: str
+    :ivar print_with_reports: description
+    :vartype print_with_reports: bool
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -502,6 +661,83 @@ def matter_attachment_to_dict(x: MatterAttachment) -> Any:
 
 @dataclass
 class EventItem:
+    """ EventItem description
+    
+    `EventItem <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusEventItem>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar event_id: description
+    :vartype event_id: int
+    :ivar agenda_sequence: description
+    :vartype agenda_sequence: int
+    :ivar minutes_sequence: description
+    :vartype minutes_sequence: int
+    :ivar agenda_number: description
+    :vartype agenda_number: str
+    :ivar video: description
+    :vartype video: int
+    :ivar video_index: description
+    :vartype video_index: int
+    :ivar version: description
+    :vartype version: str
+    :ivar agenda_note: description
+    :vartype agenda_note: str
+    :ivar minutes_note: description
+    :vartype minutes_note: str
+    :ivar action_id: description
+    :vartype action_id: int
+    :ivar action_name: description
+    :vartype action_name: str
+    :ivar action_text: description
+    :vartype action_text: str
+    :ivar passed_flag: description
+    :vartype passed_flag: int
+    :ivar passed_flag_name: description
+    :vartype passed_flag_name: str
+    :ivar roll_call_flag: description
+    :vartype roll_call_flag: int
+    :ivar flag_extra: description
+    :vartype flag_extra: int
+    :ivar title: description
+    :vartype title: str
+    :ivar tally: description
+    :vartype tally: str
+    :ivar accela_record_id: description
+    :vartype accela_record_id: str
+    :ivar consent: description
+    :vartype consent: int
+    :ivar mover_id: description
+    :vartype mover_id: int
+    :ivar mover: description
+    :vartype mover: str
+    :ivar seconder_id: description
+    :vartype seconder_id: int
+    :ivar seconder: description
+    :vartype seconder: str
+    :ivar matter_id: description
+    :vartype matter_id: int
+    :ivar matter_guid: description
+    :vartype matter_guid: str
+    :ivar matter_file: description
+    :vartype matter_file: str
+    :ivar matter_name: description
+    :vartype matter_name: str
+    :ivar matter_type: description
+    :vartype matter_type: str
+    :ivar matter_status: description
+    :vartype matter_status: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -729,6 +965,57 @@ def event_item_to_dict(x: EventItem) -> Any:
 
 @dataclass
 class Event:
+    """ Event description
+    
+    `Event <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusEvent>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar body_id: description
+    :vartype body_id: int
+    :ivar body_name: description
+    :vartype body_name: str
+    :ivar date: description
+    :vartype date: datetime
+    :ivar time: description
+    :vartype time: str
+    :ivar video_status: description
+    :vartype video_status: str
+    :ivar agenda_status_id: description
+    :vartype agenda_status_id: int
+    :ivar agenda_status_name: description
+    :vartype agenda_status_name: str
+    :ivar minutes_status_id: description
+    :vartype minutes_status_id: int
+    :ivar minutes_status_name: description
+    :vartype minutes_status_name: str
+    :ivar location: description
+    :vartype location: str
+    :ivar agenda_file: description
+    :vartype agenda_file: str
+    :ivar minutes_file: description
+    :vartype minutes_file: str
+    :ivar agenda_last_published_utc: description
+    :vartype agenda_last_published_utc: datetime
+    :ivar minutes_last_published_utc: description
+    :vartype minutes_last_published_utc: datetime
+    :ivar comment: description
+    :vartype comment: str
+    :ivar video_path: description
+    :vartype video_path: str
+    :ivar in_site_url: description
+    :vartype in_site_url: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -876,6 +1163,31 @@ def event_to_dict(x: Event) -> Any:
 
 @dataclass
 class Index:
+    """ Index description
+    
+    `Index <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusIndex>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar name: description
+    :vartype name: str
+    :ivar active_flag: description
+    :vartype active_flag: int
+    :ivar used_flag: description
+    :vartype used_flag: int
+    :ivar api_metadata: description
+    :vartype api_metadata: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -934,6 +1246,31 @@ def index_to_dict(x: Index) -> Any:
 
 @dataclass
 class MatterCodeSection:
+    """ MatterCodeSection description
+    
+    `MatterCodeSection <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterCodeSection>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar matter_id: description
+    :vartype matter_id: int
+    :ivar code_section_id: description
+    :vartype code_section_id: int
+    :ivar number: description
+    :vartype number: str
+    :ivar name: description
+    :vartype name: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -1006,6 +1343,77 @@ def matter_code_section_to_dict(x: MatterCodeSection) -> Any:
 
 @dataclass
 class MatterHistory:
+    """ MatterHistory description
+    
+    `MatterHistory <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterHistory>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar event_id: description
+    :vartype event_id: int
+    :ivar agenda_sequence: description
+    :vartype agenda_sequence: int
+    :ivar minutes_sequence: description
+    :vartype minutes_sequence: int
+    :ivar agenda_number: description
+    :vartype agenda_number: str
+    :ivar video: description
+    :vartype video: int
+    :ivar video_index: description
+    :vartype video_index: int
+    :ivar version: description
+    :vartype version: str
+    :ivar agenda_note: description
+    :vartype agenda_note: str
+    :ivar minutes_note: description
+    :vartype minutes_note: str
+    :ivar action_date: description
+    :vartype action_date: datetime
+    :ivar action_id: description
+    :vartype action_id: int
+    :ivar action_name: description
+    :vartype action_name: str
+    :ivar action_text: description
+    :vartype action_text: str
+    :ivar action_body_id: description
+    :vartype action_body_id: int
+    :ivar action_body_name: description
+    :vartype action_body_name: str
+    :ivar passed_flag: description
+    :vartype passed_flag: int
+    :ivar passed_flag_name: description
+    :vartype passed_flag_name: str
+    :ivar roll_call_flag: description
+    :vartype roll_call_flag: int
+    :ivar flag_extra: description
+    :vartype flag_extra: int
+    :ivar tally: description
+    :vartype tally: str
+    :ivar accela_record_id: description
+    :vartype accela_record_id: str
+    :ivar consent: description
+    :vartype consent: int
+    :ivar mover_id: description
+    :vartype mover_id: int
+    :ivar mover_name: description
+    :vartype mover_name: str
+    :ivar seconder_id: description
+    :vartype seconder_id: int
+    :ivar seconder_name: description
+    :vartype seconder_name: str
+    :ivar matter_status_id: description
+    :vartype matter_status_id: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -1246,6 +1654,29 @@ def matter_history_to_dict(x: MatterHistory) -> Any:
 
 @dataclass
 class MatterIndex:
+    """ MatterIndex description
+    
+    `MatterIndex <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterIndex>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar matter_id: description
+    :vartype matter_id: int
+    :ivar index_id: description
+    :vartype index_id: int
+    :ivar name: description
+    :vartype name: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -1300,6 +1731,27 @@ def matter_index_to_dict(x: MatterIndex) -> Any:
 
 @dataclass
 class MatterRelation:
+    """ MatterRelation description
+    
+    `MatterRelation <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterRelation>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar matter_id: description
+    :vartype matter_id: int
+    :ivar flag: description
+    :vartype flag: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -1349,6 +1801,15 @@ def matter_relation_to_dict(x: MatterRelation) -> Any:
 
 @dataclass
 class MatterTextVersion:
+    """ MatterTextVersion description
+    
+    `MatterTextVersion <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterTextVersion>`_.
+
+
+
+    """
+
+
     key: str
     value: str
 
@@ -1376,6 +1837,17 @@ def matter_text_version_to_dict(x: MatterTextVersion) -> Any:
 
 @dataclass
 class MatterRequester:
+    """ MatterRequester description
+    
+    `MatterRequester <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterRequester>`_.
+
+    :ivar name: description
+    :vartype name: str
+
+
+    """
+
+
     name: Optional[str]
 
     @staticmethod
@@ -1400,6 +1872,21 @@ def matter_requester_to_dict(x: MatterRequester) -> Any:
 
 @dataclass
 class Report:
+    """ Report description
+    
+    `Report <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusReport>`_.
+
+    :ivar name: description
+    :vartype name: str
+    :ivar url: description
+    :vartype url: str
+    :ivar type: description
+    :vartype type: str
+
+
+    """
+
+
     name: Optional[str]
     url: Optional[str]
     type: Optional[str]
@@ -1430,6 +1917,121 @@ def report_to_dict(x: Report) -> Any:
 
 @dataclass
 class Matter:
+    """ Matter description
+    
+    `Matter <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatter>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar file: description
+    :vartype file: str
+    :ivar name: description
+    :vartype name: str
+    :ivar title: description
+    :vartype title: str
+    :ivar type_id: description
+    :vartype type_id: int
+    :ivar type_name: description
+    :vartype type_name: str
+    :ivar status_id: description
+    :vartype status_id: int
+    :ivar status_name: description
+    :vartype status_name: str
+    :ivar body_id: description
+    :vartype body_id: int
+    :ivar body_name: description
+    :vartype body_name: str
+    :ivar intro_date: description
+    :vartype intro_date: datetime
+    :ivar agenda_date: description
+    :vartype agenda_date: datetime
+    :ivar passed_date: description
+    :vartype passed_date: datetime
+    :ivar enactment_date: description
+    :vartype enactment_date: datetime
+    :ivar enactment_number: description
+    :vartype enactment_number: str
+    :ivar requester: description
+    :vartype requester: str
+    :ivar notes: description
+    :vartype notes: str
+    :ivar version: description
+    :vartype version: str
+    :ivar text1: description
+    :vartype text1: str
+    :ivar text2: description
+    :vartype text2: str
+    :ivar text3: description
+    :vartype text3: str
+    :ivar text4: description
+    :vartype text4: str
+    :ivar text5: description
+    :vartype text5: str
+    :ivar date1: description
+    :vartype date1: datetime
+    :ivar date2: description
+    :vartype date2: datetime
+    :ivar ex_text1: description
+    :vartype ex_text1: str
+    :ivar ex_text2: description
+    :vartype ex_text2: str
+    :ivar ex_text3: description
+    :vartype ex_text3: str
+    :ivar ex_text4: description
+    :vartype ex_text4: str
+    :ivar ex_text5: description
+    :vartype ex_text5: str
+    :ivar ex_text6: description
+    :vartype ex_text6: str
+    :ivar ex_text7: description
+    :vartype ex_text7: str
+    :ivar ex_text8: description
+    :vartype ex_text8: str
+    :ivar ex_text9: description
+    :vartype ex_text9: str
+    :ivar ex_text10: description
+    :vartype ex_text10: str
+    :ivar ex_text11: description
+    :vartype ex_text11: str
+    :ivar ex_date1: description
+    :vartype ex_date1: datetime
+    :ivar ex_date2: description
+    :vartype ex_date2: datetime
+    :ivar ex_date3: description
+    :vartype ex_date3: datetime
+    :ivar ex_date4: description
+    :vartype ex_date4: datetime
+    :ivar ex_date5: description
+    :vartype ex_date5: datetime
+    :ivar ex_date6: description
+    :vartype ex_date6: datetime
+    :ivar ex_date7: description
+    :vartype ex_date7: datetime
+    :ivar ex_date8: description
+    :vartype ex_date8: datetime
+    :ivar ex_date9: description
+    :vartype ex_date9: datetime
+    :ivar ex_date10: description
+    :vartype ex_date10: datetime
+    :ivar agiloft_id: description
+    :vartype agiloft_id: int
+    :ivar reference: description
+    :vartype reference: str
+    :ivar restrict_view_via_web: description
+    :vartype restrict_view_via_web: bool
+    :ivar reports: description
+    :vartype reports: Report
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -1714,6 +2316,37 @@ def matter_to_dict(x: Matter) -> Any:
 
 @dataclass
 class MatterSponsor:
+    """ MatterSponsor description
+    
+    `MatterSponsor <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterSponsor>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar matter_id: description
+    :vartype matter_id: int
+    :ivar matter_version: description
+    :vartype matter_version: str
+    :ivar name_id: description
+    :vartype name_id: int
+    :ivar body_id: description
+    :vartype body_id: int
+    :ivar name: description
+    :vartype name: str
+    :ivar sequence: description
+    :vartype sequence: int
+    :ivar link_flag: description
+    :vartype link_flag: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -1798,6 +2431,35 @@ def matter_sponsor_to_dict(x: MatterSponsor) -> Any:
 
 @dataclass
 class MatterStatus:
+    """ MatterStatus description
+    
+    `MatterStatus <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterStatus>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar name: description
+    :vartype name: str
+    :ivar sort: description
+    :vartype sort: int
+    :ivar active_flag: description
+    :vartype active_flag: int
+    :ivar description: description
+    :vartype description: str
+    :ivar used_flag: description
+    :vartype used_flag: int
+    :ivar public_flag: description
+    :vartype public_flag: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -1882,6 +2544,31 @@ def matter_status_to_dict(x: MatterStatus) -> Any:
 
 @dataclass
 class MatterText:
+    """ MatterText description
+    
+    `MatterText <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterText>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar matter_id: description
+    :vartype matter_id: int
+    :ivar version: description
+    :vartype version: str
+    :ivar plain: description
+    :vartype plain: str
+    :ivar rtf: description
+    :vartype rtf: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -1935,6 +2622,33 @@ def matter_text_to_dict(x: MatterText) -> Any:
 
 @dataclass
 class MatterType:
+    """ MatterType description
+    
+    `MatterType <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusMatterType>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar name: description
+    :vartype name: str
+    :ivar sort: description
+    :vartype sort: int
+    :ivar active_flag: description
+    :vartype active_flag: int
+    :ivar description: description
+    :vartype description: str
+    :ivar used_flag: description
+    :vartype used_flag: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -2005,6 +2719,57 @@ def matter_type_to_dict(x: MatterType) -> Any:
 
 @dataclass
 class OfficeRecord:
+    """ OfficeRecord description
+    
+    `OfficeRecord <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusOfficeRecord>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar first_name: description
+    :vartype first_name: str
+    :ivar last_name: description
+    :vartype last_name: str
+    :ivar email: description
+    :vartype email: str
+    :ivar full_name: description
+    :vartype full_name: str
+    :ivar start_date: description
+    :vartype start_date: datetime
+    :ivar end_date: description
+    :vartype end_date: datetime
+    :ivar sort: description
+    :vartype sort: int
+    :ivar person_id: description
+    :vartype person_id: int
+    :ivar body_id: description
+    :vartype body_id: int
+    :ivar body_name: description
+    :vartype body_name: str
+    :ivar title: description
+    :vartype title: str
+    :ivar vote_divider: description
+    :vartype vote_divider: float
+    :ivar extend_flag: description
+    :vartype extend_flag: int
+    :ivar member_type_id: description
+    :vartype member_type_id: int
+    :ivar member_type: description
+    :vartype member_type: str
+    :ivar support_name_id: description
+    :vartype support_name_id: int
+    :ivar support_full_name: description
+    :vartype support_full_name: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -2159,6 +2924,65 @@ def office_record_to_dict(x: OfficeRecord) -> Any:
 
 @dataclass
 class Person:
+    """ Person description
+    
+    `Person <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusPerson>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar first_name: description
+    :vartype first_name: str
+    :ivar last_name: description
+    :vartype last_name: str
+    :ivar full_name: description
+    :vartype full_name: str
+    :ivar active_flag: description
+    :vartype active_flag: int
+    :ivar used_sponsor_flag: description
+    :vartype used_sponsor_flag: int
+    :ivar address1: description
+    :vartype address1: str
+    :ivar city1: description
+    :vartype city1: str
+    :ivar state1: description
+    :vartype state1: str
+    :ivar zip1: description
+    :vartype zip1: str
+    :ivar phone: description
+    :vartype phone: str
+    :ivar fax: description
+    :vartype fax: str
+    :ivar email: description
+    :vartype email: str
+    :ivar www: description
+    :vartype www: str
+    :ivar address2: description
+    :vartype address2: str
+    :ivar city2: description
+    :vartype city2: str
+    :ivar state2: description
+    :vartype state2: str
+    :ivar zip2: description
+    :vartype zip2: str
+    :ivar phone2: description
+    :vartype phone2: str
+    :ivar fax2: description
+    :vartype fax2: str
+    :ivar email2: description
+    :vartype email2: str
+    :ivar www2: description
+    :vartype www2: str
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -2289,6 +3113,37 @@ def person_to_dict(x: Person) -> Any:
 
 @dataclass
 class RollCall:
+    """ RollCall description
+    
+    `RollCall <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusRollCall>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar person_id: description
+    :vartype person_id: int
+    :ivar person_name: description
+    :vartype person_name: str
+    :ivar value_id: description
+    :vartype value_id: int
+    :ivar value_name: description
+    :vartype value_name: str
+    :ivar sort: description
+    :vartype sort: int
+    :ivar result: description
+    :vartype result: int
+    :ivar event_item_id: description
+    :vartype event_item_id: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -2367,6 +3222,37 @@ def roll_call_to_dict(x: RollCall) -> Any:
 
 @dataclass
 class Vote:
+    """ Vote description
+    
+    `Vote <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusVote>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar person_id: description
+    :vartype person_id: int
+    :ivar person_name: description
+    :vartype person_name: str
+    :ivar value_id: description
+    :vartype value_id: int
+    :ivar value_name: description
+    :vartype value_name: str
+    :ivar sort: description
+    :vartype sort: int
+    :ivar result: description
+    :vartype result: int
+    :ivar event_item_id: description
+    :vartype event_item_id: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
@@ -2439,6 +3325,33 @@ def vote_to_dict(x: Vote) -> Any:
 
 @dataclass
 class VoteType:
+    """ VoteType description
+    
+    `VoteType <http://webapi.legistar.com/Help/ResourceModel?modelName=GranicusVoteType>`_.
+
+    :ivar id: description
+    :vartype id: int
+    :ivar guid: description
+    :vartype guid: str
+    :ivar last_modified_utc: description
+    :vartype last_modified_utc: datetime
+    :ivar row_version: description
+    :vartype row_version: str
+    :ivar name: description
+    :vartype name: str
+    :ivar plural_name: description
+    :vartype plural_name: str
+    :ivar used_for: description
+    :vartype used_for: int
+    :ivar result: description
+    :vartype result: int
+    :ivar sort: description
+    :vartype sort: int
+
+
+    """
+
+
     id: Optional[int]
     guid: Optional[str]
     last_modified_utc: Optional[datetime]
