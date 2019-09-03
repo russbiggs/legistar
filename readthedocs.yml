@@ -2,3 +2,7 @@ name: legistar
 type: sphinx
 python:
   version: 3.7
+  install:
+    - pipfile: .
+      skip_lock: true
+      dev: true
